@@ -1,0 +1,18 @@
+div {
+    @include animateDiv();
+}
+
+div:nth-child(1) {
+    background-color: rgba(map-get($colors, 1), 0.6);
+    @include animate(1);
+}
+
+div:nth-child(2) {
+    background-color: rgba(map-get($colors, 2), 0.6);
+    @include animate(3);
+}
+
+div:nth-child(3) {
+    background-color: rgba(map-get($colors, 3), 0.6);
+    @include animate(5);
+}

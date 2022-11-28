@@ -1,0 +1,55 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  right: -200vh;
+  font-size: 8vw;
+  color: black;
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 20%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div:nth-child(1) {
+  background-color: rgba(56, 64, 95, 0.6);
+  animation: animiraj 1.5s ease-in 1s forwards;
+}
+
+div:nth-child(2) {
+  background-color: rgba(255, 172, 129, 0.6);
+  animation: animiraj 1.5s ease-in 3s forwards;
+}
+
+div:nth-child(3) {
+  background-color: rgba(188, 237, 246, 0.6);
+  animation: animiraj 1.5s ease-in 5s forwards;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("https://v1.padlet.pics/1/image.webp?t=c_limit%2Cdpr_1%2Ch_859%2Cw_1528&url=https%3A%2F%2Fpadlet-uploads.storage.googleapis.com%2F891001168%2Fe79960e75be653e107a57de088ea3859%2Fblur_clean.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+@keyframes animiraj {
+  100% {
+    right: 0px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
